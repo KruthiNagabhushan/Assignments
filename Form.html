@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Form</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+	<form  id="form" class="box" onsubmit="return validation()">
+
+		<h1> Form </h1>
+		<div id="error_message"></div>
+		<div class="input_field">Select your source</div>
+		<input type="text" id="source" placeholder="google cloud storage">
+
+		<div class="input_field">Provide a name for pipeline</div>
+		<input type="text" id="pipeline" placeholder="e.g.cust_shop_energy_gateway001">
+
+		<div class="input_field">GCS project name</div>
+		<input type="text" id="pname" placeholder="ProjectID">
+
+		<div class="input_field">GCS bucket name</div>
+		<input type="text" id="bname" placeholder="gs://your-bucket">
+
+		<div class="input_field">Input Cloud Storage File(s)</div>
+		<input type="text" id="storage" placeholder="GCS Location of your files">
+
+		<h5>Example:gs://your-bucket/your-files/01.csv</h5>
+		<div class="input_field">GCS credentials</div>
+		<input type="text" id="cred" placeholder="">
+
+		<div class="input_field">Run Every </div>
+		<input type="text" id="time" placeholder="in minutes">
+		<br>
+         
+		<input  type="submit" name="" value="Create">
+		<button type="reset" value="Reset">Clear</button>
+		
+	</form>
+</body>
+</html>
